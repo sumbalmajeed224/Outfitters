@@ -7,13 +7,47 @@
 <meta name="description" content="Six Winter 26 looks, styled head to toe. Explore the runway, tap a dot to see the piece, and shop the full look.">
 <meta name="theme-color" content="#ffffff">
 <link rel="preload" as="font" type="font/woff2" href="assets/fonts/archivo-latin-wdth-normal.woff2" crossorigin>
-<link rel="preload" as="image" href="assets/runway/look-1.webp">
+<link rel="preload" as="image" href="assets/hero/jacket.webp">
 <link rel="stylesheet" href="css/fonts.css">
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/runway.css">
+<link rel="stylesheet" href="css/hero.css">
 </head>
 <body class="home">
 <main>
+  <!-- HERO: Beyond the ordinary -->
+  <section class="hero2" id="hero2" aria-label="Outfitters Winter 26">
+    <p class="h2-eyebrow">Beyond</p>
+    <h1 class="h2-title"><span class="h2-the" aria-label="The">The</span><span class="h2-ord" aria-label="Ordinary">Ordinary</span></h1>
+    <div class="h2-strip l" aria-hidden="true"><span>Built for the cold. Cut for the city. Faux leather, denim, knit and layers — head to toe. </span></div>
+    <div class="h2-strip r" aria-hidden="true"><span>Built for the cold. Cut for the city. Faux leather, denim, knit and layers — head to toe. </span></div>
+    <div class="h2-stage" id="h2Stage">
+      <span class="h2-shadow"></span>
+      <svg class="h2-chair" viewBox="0 0 400 520" fill="none" stroke="#5b3a28" stroke-width="9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path class="draw fillable" d="M104 34H296Q304 34 304 42V196H96V42Q96 34 104 34Z" fill="#dcc9a8" stroke-width="7"/>
+        <path class="draw" d="M114 84H286M114 122H286M114 160H286" stroke="#c9a77c" stroke-width="5"/>
+        <path class="draw" d="M96 30L82 506M304 30L318 506"/>
+        <path class="draw" d="M58 262H342" stroke-width="16"/>
+        <path class="draw" d="M92 262V336M308 262V336"/>
+        <path class="draw fillable" d="M84 322H316V352H84Z" fill="#c9a77c" stroke-width="7"/>
+        <path class="draw" d="M104 352L94 508M296 352L306 508"/>
+        <path class="draw" d="M92 436H308" stroke-width="6"/>
+      </svg>
+      <div class="h2-item h2-trousers"><img src="assets/hero/trousers.webp" alt="Baggy fit carpenter trousers in caramel" width="772" height="1318"></div>
+      <div class="h2-item h2-jacket"><img src="assets/hero/jacket.webp" alt="Faux leather zipper jacket in dark brown" width="870" height="1122" fetchpriority="high"></div>
+      <div class="h2-item h2-shoe a"><img src="assets/hero/sneaker.webp" alt="" width="1190" height="504"></div>
+      <div class="h2-item h2-shoe b"><img src="assets/hero/sneaker.webp" alt="Multi-piece low-top sneakers in coffee" width="1190" height="504"></div>
+      <a class="h2-pin" id="pj" style="left:50%;top:30%" href="product.html?id=f0354-101"><i>1</i><em></em></a>
+      <a class="h2-pin l" id="pt" style="left:44%;top:66%" href="product.html?id=f0831-108"><i>2</i><em></em></a>
+      <a class="h2-pin" id="ps" style="left:42%;top:94%" href="product.html?id=f0448-112"><i>3</i><em></em></a>
+    </div>
+    <div class="h2-corner tl">Winter 26<br>New season</div>
+    <div class="h2-corner tr">Featured<br>Faux leather</div>
+    <div class="h2-corner bl">Men · Women<br>250 pieces</div>
+    <div class="h2-corner br"><a href="shop.html">Shop the edit <span>→</span></a></div>
+    <a class="h2-down" href="#runway"><span>Try the look</span><i></i></a>
+  </section>
+
   <runway-section id="runway" aria-label="Try the Look runway"></runway-section>
 
   <div class="marquee"><div class="track"><span class="item">Try the look <span class="st"></span> <i>Winter 26</i> <span class="st"></span> Layer up <span class="st"></span> <i>head to toe</i> <span class="st"></span></span></div></div>
@@ -31,6 +65,6 @@
   </section>
 </main>
 <script src="vendor/gsap.min.js"></script><script src="vendor/ScrollTrigger.min.js"></script><script src="vendor/Flip.min.js"></script><script src="vendor/lenis.min.js"></script>
-<script src="js/data.js"></script><script src="js/core.js"></script><script src="js/runway.js"></script>
+<script src="js/data.js"></script><script src="js/core.js"></script><script src="js/runway.js"></script><script src="js/hero.js"></script>
 </body>
 </html>
