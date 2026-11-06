@@ -72,7 +72,7 @@ ul{list-style:none}
 .menu-open .burger i:last-child{transform:translateY(-5px) rotate(-45deg)}
 @media(max-width:900px){.nav{display:none}.burger{display:block}}
 .menu{position:fixed;inset:0;z-index:90;background:var(--leather2);padding:110px var(--pad) var(--pad);display:flex;flex-direction:column;justify-content:space-between;clip-path:inset(0 0 100% 0);visibility:hidden}
-.menu ul a{display:block;font-size:clamp(44px,13vw,110px);font-stretch:125%;font-weight:900;text-transform:uppercase;letter-spacing:-.03em;line-height:.95;overflow:hidden}
+.menu ul a{display:block;font-size:clamp(30px,9.5vw,88px);font-stretch:125%;font-weight:900;text-transform:uppercase;letter-spacing:-.03em;line-height:.95;overflow:hidden}
 .menu ul a span{display:block}
 .menu small{opacity:.6;font-size:13px}
 
@@ -155,7 +155,8 @@ ul{list-style:none}
 .cat .lbl{position:absolute;left:0;right:0;bottom:0;height:64px;padding:0 18px;display:flex;justify-content:space-between;align-items:center;z-index:2;color:var(--ink);background:var(--studio)}
 .cat{overflow:hidden}
 .cat .im{overflow:hidden}
-.cat .lbl b{font-size:clamp(22px,2.4vw,36px);font-stretch:125%;font-weight:900;text-transform:uppercase;letter-spacing:-.03em;line-height:.9}
+@media(max-width:900px){.cat .lbl b{font-size:3.7vw!important}.cat .lbl{padding:0 12px!important}.cat .lbl span{font-size:11px}}
+.cat .lbl b{font-size:clamp(18px,2.4vw,36px);font-stretch:125%;font-weight:900;text-transform:uppercase;letter-spacing:-.03em;line-height:.9}
 .cat .lbl span{font-size:12px;font-weight:700;letter-spacing:.1em}
 .cat .no{position:absolute;top:14px;left:16px;font-size:12px;font-weight:700;letter-spacing:.14em;z-index:2}
 @media(max-width:800px){.rail{height:auto;padding:80px 0}.rail .track{width:auto;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:10px}.cat{scroll-snap-align:start}}
@@ -246,7 +247,7 @@ ul{list-style:none}
 .ftr .nl{display:flex;border-bottom:1.5px solid var(--bone);margin-top:16px;max-width:420px}
 .ftr .nl input{flex:1;background:none;border:0;color:inherit;font:inherit;padding:14px 0;outline:0}
 .ftr .nl button{font-weight:700;letter-spacing:.12em;text-transform:uppercase;font-size:12px}
-.ftr .word{font-size:20.5vw;white-space:nowrap;text-align:center;line-height:.74;margin:0 -1vw;padding-top:2vw}
+.ftr .word{font-size:10.6vw;white-space:nowrap;text-align:center;line-height:.9;margin:0;padding-top:2vw;overflow:hidden}
 .ftr .word .ch{display:inline-block}
 .ftr .bot{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;font-size:12px;opacity:.5;margin-top:26px}
 @media(max-width:800px){.ftr .top{grid-template-columns:1fr 1fr}.ftr .top>div:first-child{grid-column:1/-1}}

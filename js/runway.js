@@ -363,9 +363,15 @@
     return `<a class="cat" href="shop.html?c=${c}" data-cursor="Explore"><span class="no">0${i + 1}</span><div class="im"><img src="${imgSrc(rep.img[0])}" alt="${CAT_LABEL[c]}" loading="lazy"></div><div class="lbl"><b>${CAT_LABEL[c]}</b><span>${list.length}</span></div></a>`;
   }).join('');
   const pick = (g, nn) => { const out = [], seen = new Set(); const l = P.filter(p => p.gender === g && p.cat !== 'accessories'); l.forEach(p => { if (out.length < nn && !seen.has(p.cat)) { seen.add(p.cat); out.push(p); } }); l.forEach(p => { if (out.length < nn && !out.includes(p)) out.push(p); }); return out; };
+  const archHTML = p => `<a class="arch" href="product.html?id=${p.id}" data-cursor="View">
+      ${p.isNew ? '<span class="arch__new">New</span>' : ''}
+      <div class="arch__img"><img src="${imgSrc(p.img[0])}" alt="${p.title}" loading="lazy"></div>
+      <div class="arch__meta"><span class="arch__cat">${CAT_LABEL[p.cat]}</span><h3>${p.title}</h3><span class="arch__line"></span><span class="arch__price">${fmt(p.price)}${p.was ? `<s>${fmt(p.was)}</s>` : ''}</span>
+      <span class="arch__dots">${p.colors.slice(0, 3).map(c => `<i style="background:${OF.swatch(c)}"></i>`).join('')}<em>${p.colors.length} colour${p.colors.length > 1 ? 's' : ''}</em></span></div>
+      <span class="arch__go"><svg width="18" height="10" viewBox="0 0 26 14" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M1 7h24M19 1l6 6-6 6"/></svg></span></a>`;
   const grid = document.getElementById('hmGrid');
   const draw = (g, anim) => {
-    const swap = () => { grid.innerHTML = pick(g, 8).map(cardHTML).join(''); OF.initTilt(grid); OF.gsap.from(grid.children, { y: 60, opacity: 0, duration: .9, stagger: .06, ease: 'expo.out', clearProps: 'all' }); };
+    const swap = () => { grid.innerHTML = pick(g, 8).map(archHTML).join(''); OF.gsap.from(grid.children, { y: 70, opacity: 0, duration: 1, stagger: .08, ease: 'expo.out', clearProps: 'all' }); };
     anim ? OF.gsap.to(grid.children, { y: -24, opacity: 0, duration: .3, stagger: .02, onComplete: swap }) : swap();
   };
   draw('men');
