@@ -11,7 +11,7 @@ def g(p):
     if 'men' in t: return 'men'
     if 'women' in t: return 'women'
 CAT={'OUTERWEAR':'outerwear','SWEATSHIRTS':'hoodies','SWEATERS':'knitwear','JEANS':'denim','TROUSERS':'trousers','TEES':'tees','SHIRTS/BLOUSES':'shirts','SHIRTS':'shirts','CLOSED SHOES':'footwear','BAGS':'accessories','CAPS & HATS':'accessories','BELTS & BRACES':'accessories','JEWELLERY':'accessories','SCARVES & FOULARDS':'accessories'}
-LIM={('men','outerwear'):16,('women','outerwear'):12,('men','hoodies'):10,('women','hoodies'):10,('men','knitwear'):6,('women','knitwear'):10,('men','denim'):8,('women','denim'):8,('men','trousers'):8,('women','trousers'):8,('men','tees'):8,('women','tees'):8,('men','shirts'):8,('women','shirts'):6,('men','footwear'):6,('women','footwear'):6,('men','accessories'):8,('women','accessories'):8}
+LIM={('men','outerwear'):22,('women','outerwear'):18,('men','hoodies'):16,('women','hoodies'):16,('men','knitwear'):12,('women','knitwear'):16,('men','denim'):14,('women','denim'):14,('men','trousers'):14,('women','trousers'):14,('men','tees'):14,('women','tees'):14,('men','shirts'):14,('women','shirts'):12,('men','footwear'):12,('women','footwear'):12,('men','accessories'):14,('women','accessories'):14}
 ok=[p for p in ps if g(p) and p['product_type'] in CAT and 'WS-26' in p['tags'] and any(v['available'] for v in p['variants']) and len(p['images'])>=3]
 ok.sort(key=lambda p:p['updated_at'],reverse=True)
 must=['f0354-101','f0396-101']

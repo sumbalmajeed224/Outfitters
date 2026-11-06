@@ -13,7 +13,7 @@ python3 -m http.server 8000   # then visit http://localhost:8000
 | Page | File | Highlights |
 | --- | --- | --- |
 | Home | `index.html` | Preloader, pinned hero with the model cut out in front of giant type and drawn-on script callouts, velocity marquees, scrubbed manifesto, pinned horizontal category rail, pinned leather "composer", live "just landed" grid, glass spec panel with count-ups, paperclip outfit note |
-| Shop | `shop.html` | 154 real products (men + women, 9 categories), Flip-animated filtering, search and sorting, URL-synced (`?g=men&c=outerwear`), tilt cards, hover image swap, quick-add sizes |
+| Shop | `shop.html` | 250 real products (men + women, 9 categories), Flip-animated filtering, search and sorting, URL-synced (`?g=men&c=outerwear`), tilt cards, hover image swap, quick-add sizes |
 | Product | `product.html?id=…` | Sticky info panel, parallax gallery, circular-reveal lightbox, colour/size pickers, glass chips, accordion, "complete the look" |
 | Lookbook | `lookbook.html` | Four editorial chapters (leather, denim, knit, layers), masked image reveals, count-up stats |
 | Bag | `cart.html` + drawer | Persistent cart (localStorage), animated slide-in drawer, quantity controls |
