@@ -2,3 +2,4 @@ node_modules/
 *.log
 tools/.cache/
 __pycache__/
+.netlify/
