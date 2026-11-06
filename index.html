@@ -7,31 +7,31 @@
 <meta name="description" content="Six Winter 26 looks, styled head to toe. Explore the runway, tap a dot to see the piece, and shop the full look.">
 <meta name="theme-color" content="#ffffff">
 <link rel="preload" as="font" type="font/woff2" href="assets/fonts/archivo-latin-wdth-normal.woff2" crossorigin>
-<link rel="preload" as="image" href="assets/hero/reveal.webp">
+<link rel="preload" as="image" href="assets/hero/chair.webp">
 <link rel="stylesheet" href="css/fonts.css">
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/runway.css">
-<link rel="stylesheet" href="css/reveal.css">
+<link rel="stylesheet" href="css/winter.css">
 </head>
 <body class="home">
 <main>
-  <!-- HERO: The Jacket Reveal -->
-  <section class="reveal-hero" id="reveal" aria-label="Outfitters Winter 26 — open the jacket">
-    <div class="rv-col rv-left">
-      <p class="rv-eyebrow">Winter 26 · Outerwear</p>
-      <h1 class="rv-h1">Open up to <em>the cold.</em></h1>
-      <p class="rv-lede">Faux leather with snap flaps, zip pockets and a ribbed hem. Pull it open and step out.</p>
-      <div class="rv-actions"><a class="btn dark" href="shop.html?c=outerwear" data-magnetic>Shop outerwear <span class="ar">→</span></a><a class="btn" href="#runway" data-magnetic>Try the look</a></div>
+  <!-- HERO: WINTER -->
+  <section class="wh" id="winter" aria-label="Outfitters Winter 26">
+    <h1 class="wh-word" aria-label="Winter">Winter</h1>
+    <div class="wh-stage">
+      <span class="sh"></span>
+      <img class="wh-img" src="assets/hero/chair.webp" alt="A dark brown faux leather jacket, black checked shirt, grey baggy jeans and brown boots arranged on a chair" width="719" height="1035" fetchpriority="high">
+      <a class="wh-pin" id="wp1" style="left:30%;top:25%" href="product.html?id=f0396-101"><i>1</i><em></em></a>
+      <a class="wh-pin" id="wp2" style="left:40%;top:64%" href="product.html?id=f0874-109"><i>2</i><em></em></a>
+      <a class="wh-pin l" id="wp3" style="left:44%;top:93%" href="product.html?id=f0423-112"><i>3</i><em></em></a>
     </div>
-    <div class="rv-frame">
-      <canvas id="rvCanvas" role="img" aria-label="A model in a dark brown faux leather jacket, revealed as two hands pull the jacket open"></canvas>
-      <a class="rv-pin" id="rvPin" href="product.html?id=f0396-101"><i>1</i><em></em></a>
-      <a class="rv-down" href="#runway"><span>Try the look</span><i></i></a>
+    <div class="wh-copy">
+      <p class="wh-eyebrow">Winter 26 · Outerwear</p>
+      <p class="wh-lede">Leather, denim and layers — seated, styled, ready.</p>
+      <div class="wh-actions"><a class="btn dark" href="shop.html?c=outerwear" data-magnetic>Shop outerwear <span class="ar">→</span></a><a class="btn" href="#runway" data-magnetic>Try the look</a></div>
     </div>
-    <div class="rv-col rv-right">
-      <div class="rv-spec"><span class="k">Featured</span><strong>Faux Leather Jacket</strong><span>Dark Brown · Black</span><span class="sw"><i style="background:#3a261b"></i><i style="background:#101010"></i></span><span>Rs. 14,990</span>
-        <a class="btn" href="product.html?id=f0396-101" data-magnetic>Shop the jacket <span class="ar">→</span></a></div>
-    </div>
+    <div class="wh-spec"><span class="k">Featured</span><strong>Faux Leather Jacket</strong><span>Dark Brown · Black</span><span class="sw"><i style="background:#3a261b"></i><i style="background:#101010"></i></span><span>Rs. 14,990</span>
+      <a class="btn" href="product.html?id=f0396-101" data-magnetic>Shop the jacket <span class="ar">→</span></a></div>
   </section>
 
   <runway-section id="runway" aria-label="Try the Look runway"></runway-section>
@@ -51,6 +51,6 @@
   </section>
 </main>
 <script src="vendor/gsap.min.js"></script><script src="vendor/ScrollTrigger.min.js"></script><script src="vendor/Flip.min.js"></script><script src="vendor/lenis.min.js"></script>
-<script src="js/data.js"></script><script src="js/core.js"></script><script src="js/runway.js"></script><script src="js/reveal-edges.js"></script><script src="js/reveal.js"></script>
+<script src="js/data.js"></script><script src="js/core.js"></script><script src="js/runway.js"></script><script src="js/winter.js"></script>
 </body>
 </html>

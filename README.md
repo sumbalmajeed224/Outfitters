@@ -12,7 +12,7 @@ python3 -m http.server 8000   # then visit http://localhost:8000
 
 | Page | File | Highlights |
 | --- | --- | --- |
-| Home | `index.html` | **Hero:** "The Jacket Reveal" — first-person shot where the two jacket halves (hands gripping the zipper) are pulled apart on a canvas to reveal the model, with camera pull-back, depth parallax and a product hotspot. **Then Try the Look** runway: a `<runway-section>` custom element with six full-body Outfitters looks on a turning 3D ring (spring physics, depth blur), 5-second autoplay with 01–06 progress ticks, drag/swipe/keys, a "View look" popup with numbered pins, an "In this look" panel with size pickers and a full-look add-to-bag, then the category edit and new arrivals |
+| Home | `index.html` | **Hero:** a big faded WINTER word behind a cut-out jacket-jeans-boots outfit seated on a chair, with product hotspots, entrance animation and parallax. **Then Try the Look** runway: a `<runway-section>` custom element with six full-body Outfitters looks on a turning 3D ring (spring physics, depth blur), 5-second autoplay with 01–06 progress ticks, drag/swipe/keys, a "View look" popup with numbered pins, an "In this look" panel with size pickers and a full-look add-to-bag, then the category edit and new arrivals |
 | Shop | `shop.html` | 250 real products (men + women, 9 categories), Flip-animated filtering, search and sorting, URL-synced (`?g=men&c=outerwear`), tilt cards, hover image swap, quick-add sizes |
 | Product | `product.html?id=…` | Sticky info panel, parallax gallery, circular-reveal lightbox, colour/size pickers, glass chips, accordion, "complete the look" |
 | Lookbook | `lookbook.html` | Four editorial chapters (leather, denim, knit, layers), masked image reveals, count-up stats |
@@ -33,7 +33,7 @@ js/runway.js shop.js product.js lookbook.js cart.js   page scripts
 js/data.js                     generated product catalogue (window.PRODUCTS)
 assets/img                     product photography
 assets/runway                  background-removed model cut-outs for the runway (look-N.webp)
-assets/hero/reveal.webp        campaign photo for the jacket-reveal hero (js/reveal-edges.js = traced zipper edges)
+assets/hero/chair.webp         cut-out of the seated outfit for the hero
 tools/                         refresh_catalogue.sh, build_data.py
 ```
 
