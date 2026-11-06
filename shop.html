@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Shop — Outfitters</title>
+<meta name="description" content="Shop Outfitters Winter 26 — outerwear, hoodies, knitwear, denim and more for men and women.">
+<meta name="theme-color" content="#0c0c0b">
+<link rel="preload" as="font" type="font/woff2" href="assets/fonts/archivo-latin-wdth-normal.woff2" crossorigin>
+<link rel="stylesheet" href="css/fonts.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="shop">
+<main>
+<section class="phead noir">
+  <p class="eyebrow" style="margin-bottom:22px">Winter 26 · <span id="shopEy">All products</span></p>
+  <h1 class="disp" id="shopTitle">Shop</h1>
+  <div class="sub"><p id="shopSub">Faux leather, denim, knitwear and layers. Filter, sort, and watch the grid rearrange.</p><span class="eyebrow" id="shopCount"></span></div>
+</section>
+<div class="bar" id="bar">
+  <div class="grp" id="gGrp"></div>
+  <div class="grp cats" id="cGrp"></div>
+  <div class="grp"><input id="q" type="search" placeholder="Search" aria-label="Search products"><select id="sort" aria-label="Sort"><option value="featured">Featured</option><option value="new">Newest</option><option value="low">Price: low to high</option><option value="high">Price: high to low</option></select></div>
+</div>
+<div class="count-line"><span id="countLine"></span><span>Prices in PKR</span></div>
+<section class="wrap" style="padding-bottom:140px"><div class="grid" id="shopGrid"></div>
+<div class="empty-state" id="empty"><p class="serif">Nothing here — yet.</p><p style="opacity:.6;margin:14px 0 30px">Try another category or clear your search.</p><button class="btn" id="clear">Clear filters</button></div></section>
+</main>
+<script src="vendor/gsap.min.js"></script><script src="vendor/ScrollTrigger.min.js"></script><script src="vendor/Flip.min.js"></script><script src="vendor/lenis.min.js"></script>
+<script src="js/data.js"></script><script src="js/core.js"></script><script src="js/shop.js"></script>
+</body>
+</html>
