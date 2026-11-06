@@ -12,7 +12,7 @@ python3 -m http.server 8000   # then visit http://localhost:8000
 
 | Page | File | Highlights |
 | --- | --- | --- |
-| Home | `index.html` | Preloader, pinned hero with the model cut out in front of giant type and drawn-on script callouts, velocity marquees, scrubbed manifesto, pinned horizontal category rail, pinned leather "composer", live "just landed" grid, glass spec panel with count-ups, paperclip outfit note |
+| Home | `index.html` | **Try the Look** runway: a `<runway-section>` custom element with six full-body Outfitters looks on a turning 3D ring (spring physics, depth blur), 5-second autoplay with 01–06 progress ticks, drag/swipe/keys, a "View look" popup with numbered pins, an "In this look" panel with size pickers and a full-look add-to-bag, then the category edit and new arrivals |
 | Shop | `shop.html` | 250 real products (men + women, 9 categories), Flip-animated filtering, search and sorting, URL-synced (`?g=men&c=outerwear`), tilt cards, hover image swap, quick-add sizes |
 | Product | `product.html?id=…` | Sticky info panel, parallax gallery, circular-reveal lightbox, colour/size pickers, glass chips, accordion, "complete the look" |
 | Lookbook | `lookbook.html` | Four editorial chapters (leather, denim, knit, layers), masked image reveals, count-up stats |
@@ -27,11 +27,12 @@ Page-curtain transitions between pages, custom cursor with context labels, magne
 ## Structure
 
 ```
-css/style.css, css/fonts.css   design system + self-hosted fonts
+css/style.css, css/runway.css, css/fonts.css   design system, runway styles, self-hosted fonts
 js/core.js                     layout injection, scroll, cursor, transitions, cart, motion helpers
-js/home.js shop.js product.js lookbook.js cart.js   page scripts
+js/runway.js shop.js product.js lookbook.js cart.js   page scripts
 js/data.js                     generated product catalogue (window.PRODUCTS)
-assets/img                     product photography (+ hero-cutout.webp)
+assets/img                     product photography
+assets/runway                  background-removed model cut-outs for the runway (look-N.webp)
 tools/                         refresh_catalogue.sh, build_data.py
 ```
 
@@ -47,4 +48,5 @@ Re-fetches `outfitters.com.pk/products.json`, picks men's and women's winter-26 
 
 - This is a concept redesign. Checkout hands off to the real store (`outfitters.com.pk`); no payments are processed here.
 - Product names, imagery and prices belong to Outfitters.
-- `assets/img/hero-cutout.webp` is a background-removed version of the Faux Leather Jacket photo, used so the headline can sit behind the model.
+- `assets/runway/look-*.webp` are background-removed, floor-aligned versions of Outfitters model photos so the figures can stand on the white stage.
+- Runway pieces beyond the featured jacket are styling suggestions from the catalogue; the bundle total is the plain sum of the three prices.
